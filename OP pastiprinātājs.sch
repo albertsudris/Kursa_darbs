@@ -1,0 +1,606 @@
+EESchema Schematic File Version 4
+LIBS:OP pastiprinātājs-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Operacionālais pastiprinātājs uz diskrētiem elementiem"
+Date "2019-06-11"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 "VEA"
+Comment4 "Alberts Ūdris"
+$EndDescr
+$Comp
+L Device:Q_NPN_BCE V12
+U 1 1 5BAE3E0A
+P 8850 2100
+F 0 "V12" H 9041 2146 50  0000 L CNN
+F 1 "BC547" H 9041 2055 50  0000 L CNN
+F 2 "FOOTPRINTT:TO-92" H 9050 2200 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/308/BC547-1118654.pdf" H 8850 2100 50  0001 C CNN
+	1    8850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_BCE V13
+U 1 1 5BAE3EBF
+P 8850 4500
+F 0 "V13" H 9041 4454 50  0000 L CNN
+F 1 "BC557" H 9041 4545 50  0000 L CNN
+F 2 "FOOTPRINTT:TO-92" H 9050 4600 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/302/nxp_bc556_557-1188849.pdf" H 8850 4500 50  0001 C CNN
+	1    8850 4500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5BAE3F8F
+P 8050 5100
+F 0 "R8" H 8120 5146 50  0000 L CNN
+F 1 "12k" H 8120 5055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7980 5100 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/219/MF-MFS-RK-18760.pdf" H 8050 5100 50  0001 C CNN
+	1    8050 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D11
+U 1 1 5BAE406A
+P 8050 3850
+F 0 "D11" V 8004 3978 50  0000 L CNN
+F 1 "1N914" V 8095 3978 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 8050 3850 50  0001 C CNN
+F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/15031/PHILIPS/1N914.html" H 8050 3850 50  0001 C CNN
+	1    8050 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:DIODE D10
+U 1 1 5BAE40CC
+P 8050 2700
+F 0 "D10" V 8004 2828 50  0000 L CNN
+F 1 "1N914" V 8095 2828 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 8050 2700 50  0001 C CNN
+F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/15031/PHILIPS/1N914.html" H 8050 2700 50  0001 C CNN
+	1    8050 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5BAE415B
+P 8050 1400
+F 0 "R7" H 8120 1446 50  0000 L CNN
+F 1 "12k" H 8120 1355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7980 1400 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/219/MF-MFS-RK-18760.pdf" H 8050 1400 50  0001 C CNN
+	1    8050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5BAE41B5
+P 6850 1450
+F 0 "R5" H 6920 1496 50  0000 L CNN
+F 1 "100" H 6920 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6780 1450 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/447/Yageo%20LR_FKN_2013-1093369.pdf" H 6850 1450 50  0001 C CNN
+	1    6850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE V9
+U 1 1 5BAE42FD
+P 6750 4200
+F 0 "V9" H 6941 4246 50  0000 L CNN
+F 1 "BC547" H 6941 4155 50  0000 L CNN
+F 2 "FOOTPRINTT:TO-92" H 6950 4300 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/308/BC547-1118654.pdf" H 6750 4200 50  0001 C CNN
+	1    6750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5BAE4370
+P 6850 4900
+F 0 "R6" H 6920 4946 50  0000 L CNN
+F 1 "300" H 6920 4855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6780 4900 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/447/Yageo%20LR_MFR_2013-467719.pdf" H 6850 4900 50  0001 C CNN
+	1    6850 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2500 8050 2100
+Wire Wire Line
+	8650 2100 8050 2100
+Connection ~ 8050 2100
+Wire Wire Line
+	8050 2100 8050 1550
+Wire Wire Line
+	8950 1900 8950 1250
+Wire Wire Line
+	8950 1250 8050 1250
+Wire Wire Line
+	8950 1250 9500 1250
+Wire Wire Line
+	9500 1250 9500 4250
+Wire Wire Line
+	9500 4250 9700 4250
+Connection ~ 8950 1250
+Wire Wire Line
+	8050 2900 8050 3100
+Wire Wire Line
+	8050 4050 8050 4500
+Wire Wire Line
+	8050 5250 8950 5250
+Wire Wire Line
+	8950 5250 8950 4700
+Wire Wire Line
+	8650 4500 8050 4500
+Connection ~ 8050 4500
+Wire Wire Line
+	8050 4500 8050 4950
+Wire Wire Line
+	8950 5250 9500 5250
+Wire Wire Line
+	9500 5250 9500 4450
+Connection ~ 8950 5250
+Wire Wire Line
+	8050 5250 6850 5250
+Connection ~ 8050 5250
+$Comp
+L Device:C C1
+U 1 1 5BAE75FF
+P 6550 3100
+F 0 "C1" V 6802 3100 50  0000 C CNN
+F 1 "100p" V 6711 3100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6588 2950 50  0001 C CNN
+F 3 "https://www.gmelectronic.com/data/attachments/dsh.120-211.1.pdf" H 6550 3100 50  0001 C CNN
+	1    6550 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_PNP_BCE V8
+U 1 1 5BAE76A3
+P 6750 2600
+F 0 "V8" H 6941 2554 50  0000 L CNN
+F 1 "BC557" H 6941 2645 50  0000 L CNN
+F 2 "FOOTPRINTT:TO-92" H 6950 2700 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/302/nxp_bc556_557-1188849.pdf" H 6750 2600 50  0001 C CNN
+	1    6750 2600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6850 5250 6850 5050
+Wire Wire Line
+	6850 4750 6850 4400
+Wire Wire Line
+	6850 4000 6850 3100
+Wire Wire Line
+	6700 3100 6850 3100
+Connection ~ 6850 3100
+Wire Wire Line
+	6850 3100 6850 2800
+Wire Wire Line
+	6850 3100 8050 3100
+Connection ~ 8050 3100
+Wire Wire Line
+	8050 3100 8050 3650
+Wire Wire Line
+	6550 2600 6250 2600
+Wire Wire Line
+	6400 3100 6250 3100
+Wire Wire Line
+	6250 3100 6250 2600
+Connection ~ 6250 2600
+Wire Wire Line
+	6850 2400 6850 1600
+Wire Wire Line
+	6850 1300 6850 1250
+Wire Wire Line
+	6850 1250 8050 1250
+Connection ~ 8050 1250
+$Comp
+L pspice:DIODE D7
+U 1 1 5BAEAE7C
+P 5900 5000
+F 0 "D7" V 5854 5128 50  0000 L CNN
+F 1 "1N914" V 5945 5128 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 5900 5000 50  0001 C CNN
+F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/15031/PHILIPS/1N914.html" H 5900 5000 50  0001 C CNN
+	1    5900 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:DIODE D6
+U 1 1 5BAEAEEA
+P 5900 4450
+F 0 "D6" V 5854 4578 50  0000 L CNN
+F 1 "1N914" V 5945 4578 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 5900 4450 50  0001 C CNN
+F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/15031/PHILIPS/1N914.html" H 5900 4450 50  0001 C CNN
+	1    5900 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BAED122
+P 5900 1450
+F 0 "R4" H 5970 1496 50  0000 L CNN
+F 1 "12k" H 5970 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5830 1450 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/219/MF-MFS-RK-18760.pdf" H 5900 1450 50  0001 C CNN
+	1    5900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1300 5900 1250
+Wire Wire Line
+	5900 1250 6850 1250
+Connection ~ 6850 1250
+Wire Wire Line
+	5900 1600 5900 4200
+Wire Wire Line
+	5900 4200 6550 4200
+Wire Wire Line
+	5900 5200 5900 5250
+Wire Wire Line
+	5900 5250 6850 5250
+Connection ~ 6850 5250
+Wire Wire Line
+	5900 4250 5900 4200
+Connection ~ 5900 4200
+$Comp
+L Device:R R3
+U 1 1 5BAF3452
+P 4800 4700
+F 0 "R3" H 4870 4746 50  0000 L CNN
+F 1 "300" H 4870 4655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4730 4700 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/447/Yageo%20LR_MFR_2013-467719.pdf" H 4800 4700 50  0001 C CNN
+	1    4800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE V4
+U 1 1 5BAF37A6
+P 3700 2000
+F 0 "V4" H 3891 2046 50  0000 L CNN
+F 1 "BC547" H 3891 1955 50  0000 L CNN
+F 2 "FOOTPRINTT:TO-92" H 3900 2100 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/308/BC547-1118654.pdf" H 3700 2000 50  0001 C CNN
+	1    3700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE V5
+U 1 1 5BAF4417
+P 3700 2950
+F 0 "V5" H 3891 2904 50  0000 L CNN
+F 1 "BC547" H 3891 2995 50  0000 L CNN
+F 2 "FOOTPRINTT:TO-92" H 3900 3050 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/308/BC547-1118654.pdf" H 3700 2950 50  0001 C CNN
+	1    3700 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BAF676B
+P 3800 1550
+F 0 "R2" H 3870 1596 50  0000 L CNN
+F 1 "1k" H 3870 1505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3730 1550 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/447/Yageo%20LR_CFR_2013-595289.pdf" H 3800 1550 50  0001 C CNN
+	1    3800 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1250 5250 1250
+Connection ~ 5900 1250
+Wire Wire Line
+	3800 1250 3800 1400
+Wire Wire Line
+	3800 1700 3800 1800
+Wire Wire Line
+	4900 2600 4900 1800
+Wire Wire Line
+	4900 1800 3800 1800
+Wire Wire Line
+	4900 2600 6250 2600
+Connection ~ 3800 1800
+Wire Wire Line
+	3800 2750 3800 2500
+Wire Wire Line
+	3800 3150 5250 3150
+Wire Wire Line
+	5250 3150 5250 1250
+Connection ~ 5250 1250
+Wire Wire Line
+	5250 1250 3800 1250
+$Comp
+L Device:Q_NPN_BCE V14
+U 1 1 5BB0496F
+P 4700 3900
+F 0 "V14" H 4891 3946 50  0000 L CNN
+F 1 "BC547" H 4891 3855 50  0000 L CNN
+F 2 "FOOTPRINTT:TO-92" H 4900 4000 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/308/BC547-1118654.pdf" H 4700 3900 50  0001 C CNN
+	1    4700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4100 4800 4550
+Wire Wire Line
+	4800 4850 4800 5250
+Wire Wire Line
+	4800 5250 5900 5250
+Connection ~ 5900 5250
+Wire Wire Line
+	3800 2500 4800 2500
+Wire Wire Line
+	4800 2500 4800 3700
+Connection ~ 3800 2500
+Wire Wire Line
+	3800 2500 3800 2200
+$Comp
+L pspice:DIODE D1
+U 1 1 5BB07B43
+P 2800 4150
+F 0 "D1" V 2754 4278 50  0000 L CNN
+F 1 "1N914" V 2845 4278 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 2800 4150 50  0001 C CNN
+F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/15031/PHILIPS/1N914.html" H 2800 4150 50  0001 C CNN
+	1    2800 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:DIODE D2
+U 1 1 5BB07BDC
+P 2800 4750
+F 0 "D2" V 2754 4878 50  0000 L CNN
+F 1 "1N914" V 2845 4878 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 2800 4750 50  0001 C CNN
+F 3 "http://www.alldatasheet.com/datasheet-pdf/pdf/15031/PHILIPS/1N914.html" H 2800 4750 50  0001 C CNN
+	1    2800 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3950 2800 3900
+Wire Wire Line
+	2800 3900 4500 3900
+$Comp
+L Device:R R1
+U 1 1 5BB0B9BE
+P 2800 3250
+F 0 "R1" H 2870 3296 50  0000 L BNN
+F 1 "12k" H 2870 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2730 3250 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/219/MF-MFS-RK-18760.pdf" H 2800 3250 50  0001 C CNN
+	1    2800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3400 2800 3900
+Connection ~ 2800 3900
+Wire Wire Line
+	3800 1250 2800 1250
+Wire Wire Line
+	2800 1250 2800 3100
+Connection ~ 3800 1250
+Wire Wire Line
+	3500 2950 2200 2950
+Wire Wire Line
+	2200 2950 2200 2200
+Wire Wire Line
+	2200 2200 1850 2200
+Wire Wire Line
+	3500 2000 2050 2000
+Wire Wire Line
+	2050 2000 2050 2100
+Wire Wire Line
+	4800 5250 2800 5250
+Connection ~ 4800 5250
+Wire Wire Line
+	1750 2450 2450 2450
+Wire Wire Line
+	2450 2450 2450 5500
+Wire Wire Line
+	2450 5500 9650 5500
+Wire Wire Line
+	9650 5500 9650 4650
+Wire Wire Line
+	9650 4650 9900 4650
+Wire Wire Line
+	9650 4650 9650 3050
+Wire Wire Line
+	9650 3050 9950 3050
+Connection ~ 9650 4650
+Connection ~ 9650 5500
+$Comp
+L power:Earth #PWR01
+U 1 1 5BB1B650
+P 9650 6100
+F 0 "#PWR01" H 9650 5850 50  0001 C CNN
+F 1 "Earth" H 9650 5950 50  0001 C CNN
+F 2 "" H 9650 6100 50  0001 C CNN
+F 3 "~" H 9650 6100 50  0001 C CNN
+	1    9650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5BB1F1F1
+P 1000 2250
+F 0 "J1" H 1106 2528 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1106 2437 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1000 2250 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/445/6912141100xx-336089.pdf" H 1000 2250 50  0001 C CNN
+	1    1000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2100 1200 2150
+Wire Wire Line
+	1200 2100 2050 2100
+Wire Wire Line
+	1750 2450 1750 2250
+Wire Wire Line
+	1750 2250 1200 2250
+Wire Wire Line
+	1850 2200 1850 2350
+Wire Wire Line
+	1850 2350 1200 2350
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5BB2B915
+P 10150 2900
+F 0 "J3" H 10123 2780 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 10123 2871 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10150 2900 50  0001 C CNN
+F 3 "http://vitalelectrocomp.com/images/datasheet/vital-series-254.pdf" H 10150 2900 50  0001 C CNN
+	1    10150 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 3050 9950 3000
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5BB33A58
+P 10450 4400
+F 0 "J2" H 10423 4330 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10423 4421 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 10450 4400 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/445/6912141100xx-336089.pdf" H 10450 4400 50  0001 C CNN
+	1    10450 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 4450 10000 4500
+Wire Wire Line
+	9500 4450 10000 4450
+Wire Wire Line
+	9700 4250 9700 4300
+Wire Wire Line
+	9700 4300 9850 4300
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5BB4AD09
+P 9850 2550
+F 0 "#FLG02" H 9850 2625 50  0001 C CNN
+F 1 "PWR_FLAG" H 9850 2724 50  0000 C CNN
+F 2 "" H 9850 2550 50  0001 C CNN
+F 3 "~" H 9850 2550 50  0001 C CNN
+	1    9850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 2550 9850 2900
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5BB5793E
+P 10200 3750
+F 0 "#FLG03" H 10200 3825 50  0001 C CNN
+F 1 "PWR_FLAG" H 10200 3924 50  0000 C CNN
+F 2 "" H 10200 3750 50  0001 C CNN
+F 3 "~" H 10200 3750 50  0001 C CNN
+	1    10200 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 4300 9850 3900
+Wire Wire Line
+	9850 3900 10200 3900
+Wire Wire Line
+	10200 3900 10200 3750
+Connection ~ 9850 4300
+Wire Wire Line
+	9900 4400 9900 4650
+Wire Wire Line
+	9900 4400 10250 4400
+Wire Wire Line
+	9850 4300 10250 4300
+Wire Wire Line
+	9700 3000 9700 2800
+Wire Wire Line
+	9700 2800 9950 2800
+Wire Wire Line
+	9700 3000 9950 3000
+Wire Wire Line
+	8950 2300 8950 3000
+Connection ~ 8950 3000
+Wire Wire Line
+	8950 3000 8950 4300
+Wire Wire Line
+	9350 3000 9350 2900
+Wire Wire Line
+	9350 2900 9850 2900
+Wire Wire Line
+	8950 3000 9350 3000
+Connection ~ 9850 2900
+Wire Wire Line
+	9850 2900 9950 2900
+Wire Wire Line
+	2800 4350 2800 4400
+Wire Wire Line
+	2800 4950 2800 5250
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5CFD88E7
+P 3050 4400
+F 0 "#FLG0101" H 3050 4475 50  0001 C CNN
+F 1 "PWR_FLAG" V 3050 4528 50  0000 L CNN
+F 2 "" H 3050 4400 50  0001 C CNN
+F 3 "~" H 3050 4400 50  0001 C CNN
+	1    3050 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 4400 3050 4400
+Connection ~ 2800 4400
+Wire Wire Line
+	2800 4400 2800 4550
+Wire Wire Line
+	10000 4500 10250 4500
+Wire Wire Line
+	5900 4750 5900 4650
+Wire Wire Line
+	5900 4800 5900 4750
+Connection ~ 5900 4750
+Wire Wire Line
+	5900 4750 6100 4750
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5CFDC3BC
+P 6100 4750
+F 0 "#FLG0102" H 6100 4825 50  0001 C CNN
+F 1 "PWR_FLAG" V 6100 4878 50  0000 L CNN
+F 2 "" H 6100 4750 50  0001 C CNN
+F 3 "~" H 6100 4750 50  0001 C CNN
+	1    6100 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5BB481E4
+P 9800 5300
+F 0 "#FLG01" H 9800 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 9800 5474 50  0000 C CNN
+F 2 "" H 9800 5300 50  0001 C CNN
+F 3 "~" H 9800 5300 50  0001 C CNN
+	1    9800 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5750 9650 6100
+Wire Wire Line
+	9650 5500 9650 5750
+Connection ~ 9650 5750
+Wire Wire Line
+	9650 5750 9800 5750
+Wire Wire Line
+	9800 5750 9800 5300
+$EndSCHEMATC
